@@ -9,7 +9,7 @@ const Budget = () => {
         return (total = total + item.cost);
     }, 0);
     const handleBudgetChange = (event) => {
-        const newBudgetValue = setNewBudget(event.target.value);
+        const newBudgetValue = parseInt(event.target.value);
         if (isNaN(newBudgetValue) || newBudgetValue < 0 || newBudgetValue > 20000) {
             alert("Budget should be a numeric value between 0 and 20,000.");
             setNewBudget(budget);
