@@ -89,6 +89,8 @@ const initialState = {
     currency: '£'
 };
 
+
+
 // 2. Creates the context this is the thing our components import and use to get the state
 export const AppContext = createContext();
 
